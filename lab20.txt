@@ -1,0 +1,20 @@
+by bryan byrd
+
+1. select * FROM customers;
+2. select distinct countries FROM customers;
+3. select * from customers where customers.CustomerID like ‘%BL%';
+4. select * FROM orders LIMIT 100;
+5. select * from customers where PostalCode = '1010' ‘3012’ ‘12209’ ‘05023’;
+6. select * FROM orders where ShipRegion is not null;
+7. select * customers order by Country, City;
+8. insert into customers (ContactName, Country, City) 9. VALUES (‘John’, ‘Colombia’, ‘Bogota’);
+10. update orders SET ShipRegion = ‘EuroZone’ WHERE ShipCountry = ‘France’;
+11. delete FROM order WHERE order details = 1;
+12. select AVG(Quantity), max(Quantity), min(quantity) FROM order details;
+		SELECT AVG(Quantity), max(Quantity), min(quantity) group by orderID;
+13. select CustomerID from Orders where order = 10290;
+
+14. select * FROM orders o INNER JOIN customers c ON o.CustomerID = c.CustomerID;
+15. select employees.FirstName from employees where ReportsTo is null;
+16.  select employees.FirstName from employees where ReportsTo = 2;
+
